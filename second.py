@@ -5,9 +5,7 @@
 
 def maximum(one, two, three):
     result = one
-    # print(result)
     for current in [two, three]:
-        # print(current)
         if current > result:
             result = current
 
