@@ -21,5 +21,10 @@ def calc_factorial(n):
     if(n < 0):
         sys.exit('Входное число меньше ноля!')
     else:
-        result = int()
-        for i in (range(n)+1):
+        result = 1
+        for i in (range(1, n+1)):
+            result *= i
+    return result
+
+if __name__ == '__main__':
+    print(calc_factorial(5))
